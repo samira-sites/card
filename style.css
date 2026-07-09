@@ -129,3 +129,50 @@
     color: #777;
     padding-bottom: 12px;
   }
+
+ /* Laptop / Desktop Landscape Card */
+@media (min-width: 768px) {
+  .card {
+    max-width: 750px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .card::before {
+    width: 8px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .profile-area {
+    width: 40%;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .links {
+    width: 60%;
+    padding: 35px 25px;
+    justify-content: center;
+  }
+
+  .footer-box {
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+    width: 260px;
+    margin: 0;
+  }
+
+  .bottom {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+  }
+}
