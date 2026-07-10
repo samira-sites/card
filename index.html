@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
     <title>Samira Omar | Digital Contact Card</title>
-  
+
     <!-- SEO -->
     <meta
       name="description"
@@ -14,25 +14,16 @@
     <meta name="author" content="Samira Omar" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#fe8d14" />
-  
+
     <!-- Canonical -->
     <link rel="canonical" href="https://card.samiraomar.com/" />
-  
+
     <!-- Favicons -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon-32x32.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-touch-icon.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-  
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Samira Omar | Digital Contact Card" />
@@ -53,7 +44,7 @@
     <meta property="og:url" content="https://card.samiraomar.com/" />
     <meta property="og:site_name" content="Samira Omar" />
     <meta property="og:locale" content="en_US" />
-  
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Samira Omar | Digital Contact Card" />
@@ -69,41 +60,45 @@
       name="twitter:image:alt"
       content="Samira Omar digital contact card preview"
     />
-  
+
     <!-- Add only if you have an X/Twitter account -->
     <!-- <meta name="twitter:site" content="@yourusername" /> -->
-  
+
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfilePage",
-      "name": "Samira Omar",
-      "description": "Connect with me through my digital card. Find my contact details, website, and social links in one place.",
-      "url": "https://card.samiraomar.com/",
-      "image": "https://card.samiraomar.com/images/card-preview.webp"
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Samira Omar",
+        "description": "Connect with me through my digital card. Find my contact details, website, and social links in one place.",
+        "url": "https://card.samiraomar.com/",
+        "image": "https://card.samiraomar.com/images/card-preview.webp"
+      }
     </script>
-  
+
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-  
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-  
-    <!-- CSS -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="card">
       <div class="profile-area">
+        <img
+          src="images/image.webp"
+          alt="Portrait of Samira Omar"
+          class="profile"
+        />
         <h1 class="name">Samira Omar</h1>
         <p class="role">Custom Website Developer</p>
         <div class="divider"></div>
@@ -140,35 +135,42 @@
           Website
         </a>
 
-        <a
-          href="https://www.linkedin.com/in/samira-omar/"
-          class="link"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-          LinkedIn
-        </a>
+        <div class="wrap">
+          <a
+            href="https://www.linkedin.com/in/samira-omar/"
+            class="link"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.github.com/samira-sites/"
+            class="link"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
 
-        <a
-          href="https://www.facebook.com/profile.php?id=61584179950754"
-          class="link"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fa-brands fa-facebook"></i>
-          Facebook
-        </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61584179950754"
+            class="link"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
 
-        <a
-          href="https://www.tiktok.com/@sam_webdev"
-          class="link"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fa-brands fa-tiktok"></i>
-          TikTok
-        </a>
+          <a
+            href="https://www.tiktok.com/@sam_webdev"
+            class="link"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
       </div>
 
       <div class="footer-box">
@@ -177,7 +179,11 @@
         <span>Feel free to connect with me.</span>
       </div>
 
-      <div class="bottom">© 2026 Samira Omar</div>
+      <div class="bottom">
+        &copy; <span id="year"></span> Samira Omar. All rights reserved.
+      </div>
+
+      <script src="script.js"></script>
     </div>
   </body>
 </html>
