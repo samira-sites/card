@@ -139,9 +139,7 @@ body {
 }
 .wrap {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  padding-inline: clamp(1rem, 5vw, 2rem);
+  grid-template-columns: repeat(3, 1fr);
 }
 .wrap .link {
   flex-direction: column;
