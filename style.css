@@ -34,7 +34,7 @@ body {
 .card::before {
   content: "";
   display: block;
-  height: 5px;
+  height: 8px;
   background: #fe8d14;
 }
 .card img {
@@ -140,7 +140,8 @@ body {
 .wrap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
+  gap: 0;
+  padding-inline: clamp(1rem, 5vw, 2rem);
 }
 .wrap .link {
   flex-direction: column;
