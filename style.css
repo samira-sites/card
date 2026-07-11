@@ -34,7 +34,7 @@ body {
 .card::before {
   content: "";
   display: block;
-  height: 8px;
+  height: 10px;
   background: #fe8d14;
 }
 .card img {
